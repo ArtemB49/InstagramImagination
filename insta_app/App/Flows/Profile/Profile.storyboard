@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pgZ-1m-Ls1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="blr-Qm-JUS">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="pgZ-1m-Ls1" customClass="ProfileViewController" customModule="insta_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wn8-n5-dba">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-5W-yB3">
+                                <rect key="frame" x="0.0" y="55" width="375" height="189"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0u-f3-oju">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw6-VT-idN">
+                                        <rect key="frame" x="0.0" y="138" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-qE-Yxo">
+                                        <rect key="frame" x="0.0" y="168.5" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1W8-aP-cT1" firstAttribute="trailing" secondItem="IPR-5W-yB3" secondAttribute="trailing" id="AAO-bj-ddd"/>
+                            <constraint firstItem="IPR-5W-yB3" firstAttribute="leading" secondItem="1W8-aP-cT1" secondAttribute="leading" id="Ovq-im-QRD"/>
+                            <constraint firstItem="1W8-aP-cT1" firstAttribute="bottom" secondItem="IPR-5W-yB3" secondAttribute="bottom" constant="423" id="PGZ-d3-4cH"/>
+                            <constraint firstItem="IPR-5W-yB3" firstAttribute="top" secondItem="1W8-aP-cT1" secondAttribute="top" constant="35" id="pWx-zC-3RA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1W8-aP-cT1"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullNameLabel" destination="fcu-qE-Yxo" id="l3R-uh-3FN"/>
+                        <outlet property="profileImageView" destination="f0u-f3-oju" id="b1B-uQ-7Ze"/>
+                        <outlet property="userNameLabel" destination="nw6-VT-idN" id="5Kg-cN-vl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkh-El-qih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="-38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>

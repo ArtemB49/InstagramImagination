@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7476735A95371DBCE8A36985 /* Pods_insta_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C0094E3F4DDB92AE6612D /* Pods_insta_app.framework */; };
+		AE2F5AE2212BBA2C00142CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5AE1212BBA2C00142CB2 /* AppDelegate.swift */; };
+		AE2F5AE7212BBA2C00142CB2 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F5AE5212BBA2C00142CB2 /* Auth.storyboard */; };
+		AE2F5AE9212BBA2D00142CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2F5AE8212BBA2D00142CB2 /* Assets.xcassets */; };
+		AE2F5AEC212BBA2D00142CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F5AEA212BBA2D00142CB2 /* LaunchScreen.storyboard */; };
+		AE2F5AFC212BDDA800142CB2 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5AFB212BDDA800142CB2 /* Credential.swift */; };
+		AE2F5AFE212BDE4400142CB2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5AFD212BDE4400142CB2 /* AuthViewController.swift */; };
+		AE2F5B00212BDEFE00142CB2 /* AuthVCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5AFF212BDEFE00142CB2 /* AuthVCConstants.swift */; };
+		AE2F5B03212BE09900142CB2 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B02212BE09900142CB2 /* LoginResult.swift */; };
+		AE2F5B0E212BE29200142CB2 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B07212BE29200142CB2 /* AbstractRequestFactory.swift */; };
+		AE2F5B0F212BE29200142CB2 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B08212BE29200142CB2 /* AbstractErrorParser.swift */; };
+		AE2F5B10212BE29200142CB2 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B09212BE29200142CB2 /* ErrorParser.swift */; };
+		AE2F5B11212BE29200142CB2 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B0A212BE29200142CB2 /* RequestRouter.swift */; };
+		AE2F5B12212BE29200142CB2 /* ResponceCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B0B212BE29200142CB2 /* ResponceCodable.swift */; };
+		AE2F5B13212BE29200142CB2 /* StackViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B0C212BE29200142CB2 /* StackViewExtention.swift */; };
+		AE2F5B15212BE86C00142CB2 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B14212BE86C00142CB2 /* RequestFactory.swift */; };
+		AE2F5B18212BE8C100142CB2 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B17212BE8C100142CB2 /* AuthRequestFactory.swift */; };
+		AE2F5B1B212C00F000142CB2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F5B1A212C00F000142CB2 /* Profile.storyboard */; };
+		AE2F5B1D212C010900142CB2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B1C212C010900142CB2 /* ProfileViewController.swift */; };
+		AE2F5B1F212C049B00142CB2 /* AuthViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B1E212C049B00142CB2 /* AuthViewControllerDelegate.swift */; };
+		AE2F5B21212C0D3600142CB2 /* SelfUserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B20212C0D3600142CB2 /* SelfUserResult.swift */; };
+		AE2F5B23212C132E00142CB2 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B22212C132E00142CB2 /* Auth.swift */; };
+		AE2F5B25212C13DF00142CB2 /* BaseRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B24212C13DF00142CB2 /* BaseRequestFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		396C0094E3F4DDB92AE6612D /* Pods_insta_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_insta_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43256CA3CFD287695A03CA05 /* Pods-insta_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-insta_app/Pods-insta_app.release.xcconfig"; sourceTree = "<group>"; };
+		878C84976676FDD370D1B1E6 /* Pods-insta_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-insta_app/Pods-insta_app.debug.xcconfig"; sourceTree = "<group>"; };
+		AE2F5ADE212BBA2C00142CB2 /* insta_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2F5AE1212BBA2C00142CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE2F5AE6212BBA2C00142CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
+		AE2F5AE8212BBA2D00142CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE2F5AEB212BBA2D00142CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE2F5AED212BBA2D00142CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2F5AFB212BDDA800142CB2 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		AE2F5AFD212BDE4400142CB2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		AE2F5AFF212BDEFE00142CB2 /* AuthVCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVCConstants.swift; sourceTree = "<group>"; };
+		AE2F5B02212BE09900142CB2 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		AE2F5B07212BE29200142CB2 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
+		AE2F5B08212BE29200142CB2 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		AE2F5B09212BE29200142CB2 /* ErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		AE2F5B0A212BE29200142CB2 /* RequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		AE2F5B0B212BE29200142CB2 /* ResponceCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponceCodable.swift; sourceTree = "<group>"; };
+		AE2F5B0C212BE29200142CB2 /* StackViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewExtention.swift; sourceTree = "<group>"; };
+		AE2F5B14212BE86C00142CB2 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		AE2F5B17212BE8C100142CB2 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		AE2F5B1A212C00F000142CB2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		AE2F5B1C212C010900142CB2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AE2F5B1E212C049B00142CB2 /* AuthViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AE2F5B20212C0D3600142CB2 /* SelfUserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfUserResult.swift; sourceTree = "<group>"; };
+		AE2F5B22212C132E00142CB2 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		AE2F5B24212C13DF00142CB2 /* BaseRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE2F5ADB212BBA2C00142CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7476735A95371DBCE8A36985 /* Pods_insta_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C0A94E4C4E811D01329A6BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396C0094E3F4DDB92AE6612D /* Pods_insta_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75E6E1967516E2693C73E9D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878C84976676FDD370D1B1E6 /* Pods-insta_app.debug.xcconfig */,
+				43256CA3CFD287695A03CA05 /* Pods-insta_app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE2F5AD5212BBA2C00142CB2 = {
+			isa = PBXGroup;
+			children = (
+				AE2F5AE0212BBA2C00142CB2 /* insta_app */,
+				AE2F5ADF212BBA2C00142CB2 /* Products */,
+				75E6E1967516E2693C73E9D4 /* Pods */,
+				6C0A94E4C4E811D01329A6BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE2F5ADF212BBA2C00142CB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5ADE212BBA2C00142CB2 /* insta_app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2F5AE0212BBA2C00142CB2 /* insta_app */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5AF3212BBA6900142CB2 /* App */,
+				AE2F5AF5212BBA9C00142CB2 /* Environments */,
+				AE2F5B04212BE29200142CB2 /* Core */,
+				AE2F5AF6212BBAAF00142CB2 /* Resources */,
+				AE2F5AE1212BBA2C00142CB2 /* AppDelegate.swift */,
+			);
+			path = insta_app;
+			sourceTree = "<group>";
+		};
+		AE2F5AF3212BBA6900142CB2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5AF7212BBB1200142CB2 /* Assembly */,
+				AE2F5AF8212BBB1E00142CB2 /* BussinessLogic */,
+				AE2F5AF9212BBB2F00142CB2 /* Entity */,
+				AE2F5AFA212BBB3F00142CB2 /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AE2F5AF5212BBA9C00142CB2 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5AED212BBA2D00142CB2 /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		AE2F5AF6212BBAAF00142CB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5AEA212BBA2D00142CB2 /* LaunchScreen.storyboard */,
+				AE2F5AE8212BBA2D00142CB2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE2F5AF7212BBB1200142CB2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B14212BE86C00142CB2 /* RequestFactory.swift */,
+				AE2F5AFB212BDDA800142CB2 /* Credential.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AE2F5AF8212BBB1E00142CB2 /* BussinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B16212BE89F00142CB2 /* Network */,
+			);
+			path = BussinessLogic;
+			sourceTree = "<group>";
+		};
+		AE2F5AF9212BBB2F00142CB2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B02212BE09900142CB2 /* LoginResult.swift */,
+				AE2F5B20212C0D3600142CB2 /* SelfUserResult.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AE2F5AFA212BBB3F00142CB2 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B19212C00DE00142CB2 /* Profile */,
+				AE2F5B01212BDF0200142CB2 /* Auth */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		AE2F5B01212BDF0200142CB2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5AFD212BDE4400142CB2 /* AuthViewController.swift */,
+				AE2F5AFF212BDEFE00142CB2 /* AuthVCConstants.swift */,
+				AE2F5AE5212BBA2C00142CB2 /* Auth.storyboard */,
+				AE2F5B1E212C049B00142CB2 /* AuthViewControllerDelegate.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AE2F5B04212BE29200142CB2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B06212BE29200142CB2 /* Network */,
+				AE2F5B0C212BE29200142CB2 /* StackViewExtention.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AE2F5B06212BE29200142CB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B07212BE29200142CB2 /* AbstractRequestFactory.swift */,
+				AE2F5B08212BE29200142CB2 /* AbstractErrorParser.swift */,
+				AE2F5B09212BE29200142CB2 /* ErrorParser.swift */,
+				AE2F5B0A212BE29200142CB2 /* RequestRouter.swift */,
+				AE2F5B0B212BE29200142CB2 /* ResponceCodable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AE2F5B16212BE89F00142CB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B24212C13DF00142CB2 /* BaseRequestFactory.swift */,
+				AE2F5B17212BE8C100142CB2 /* AuthRequestFactory.swift */,
+				AE2F5B22212C132E00142CB2 /* Auth.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AE2F5B19212C00DE00142CB2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5B1C212C010900142CB2 /* ProfileViewController.swift */,
+				AE2F5B1A212C00F000142CB2 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE2F5ADD212BBA2C00142CB2 /* insta_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2F5AF0212BBA2D00142CB2 /* Build configuration list for PBXNativeTarget "insta_app" */;
+			buildPhases = (
+				A5C9C7F2C8310ABDA2B7E924 /* [CP] Check Pods Manifest.lock */,
+				AE2F5ADA212BBA2C00142CB2 /* Sources */,
+				AE2F5ADB212BBA2C00142CB2 /* Frameworks */,
+				AE2F5ADC212BBA2C00142CB2 /* Resources */,
+				DAB442AF3D95409EA822F397 /* [CP] Embed Pods Frameworks */,
+				53DBAC0A0707075B9188F8A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = insta_app;
+			productName = insta_app;
+			productReference = AE2F5ADE212BBA2C00142CB2 /* insta_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE2F5AD6212BBA2C00142CB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Артем Б";
+				TargetAttributes = {
+					AE2F5ADD212BBA2C00142CB2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AE2F5AD9212BBA2C00142CB2 /* Build configuration list for PBXProject "insta_app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE2F5AD5212BBA2C00142CB2;
+			productRefGroup = AE2F5ADF212BBA2C00142CB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE2F5ADD212BBA2C00142CB2 /* insta_app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE2F5ADC212BBA2C00142CB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2F5AEC212BBA2D00142CB2 /* LaunchScreen.storyboard in Resources */,
+				AE2F5AE9212BBA2D00142CB2 /* Assets.xcassets in Resources */,
+				AE2F5B1B212C00F000142CB2 /* Profile.storyboard in Resources */,
+				AE2F5AE7212BBA2C00142CB2 /* Auth.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53DBAC0A0707075B9188F8A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-insta_app/Pods-insta_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C9C7F2C8310ABDA2B7E924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-insta_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB442AF3D95409EA822F397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-insta_app/Pods-insta_app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-insta_app/Pods-insta_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE2F5ADA212BBA2C00142CB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2F5B0E212BE29200142CB2 /* AbstractRequestFactory.swift in Sources */,
+				AE2F5AFE212BDE4400142CB2 /* AuthViewController.swift in Sources */,
+				AE2F5B15212BE86C00142CB2 /* RequestFactory.swift in Sources */,
+				AE2F5B25212C13DF00142CB2 /* BaseRequestFactory.swift in Sources */,
+				AE2F5B1F212C049B00142CB2 /* AuthViewControllerDelegate.swift in Sources */,
+				AE2F5B00212BDEFE00142CB2 /* AuthVCConstants.swift in Sources */,
+				AE2F5B1D212C010900142CB2 /* ProfileViewController.swift in Sources */,
+				AE2F5B10212BE29200142CB2 /* ErrorParser.swift in Sources */,
+				AE2F5B21212C0D3600142CB2 /* SelfUserResult.swift in Sources */,
+				AE2F5AFC212BDDA800142CB2 /* Credential.swift in Sources */,
+				AE2F5B11212BE29200142CB2 /* RequestRouter.swift in Sources */,
+				AE2F5B03212BE09900142CB2 /* LoginResult.swift in Sources */,
+				AE2F5AE2212BBA2C00142CB2 /* AppDelegate.swift in Sources */,
+				AE2F5B18212BE8C100142CB2 /* AuthRequestFactory.swift in Sources */,
+				AE2F5B12212BE29200142CB2 /* ResponceCodable.swift in Sources */,
+				AE2F5B13212BE29200142CB2 /* StackViewExtention.swift in Sources */,
+				AE2F5B23212C132E00142CB2 /* Auth.swift in Sources */,
+				AE2F5B0F212BE29200142CB2 /* AbstractErrorParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE2F5AE5212BBA2C00142CB2 /* Auth.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2F5AE6212BBA2C00142CB2 /* Base */,
+			);
+			name = Auth.storyboard;
+			sourceTree = "<group>";
+		};
+		AE2F5AEA212BBA2D00142CB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2F5AEB212BBA2D00142CB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE2F5AEE212BBA2D00142CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE2F5AEF212BBA2D00142CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE2F5AF1212BBA2D00142CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878C84976676FDD370D1B1E6 /* Pods-insta_app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DY58N6J6Q3;
+				INFOPLIST_FILE = insta_app/Environments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZC.insta-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE2F5AF2212BBA2D00142CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43256CA3CFD287695A03CA05 /* Pods-insta_app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DY58N6J6Q3;
+				INFOPLIST_FILE = insta_app/Environments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZC.insta-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE2F5AD9212BBA2C00142CB2 /* Build configuration list for PBXProject "insta_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2F5AEE212BBA2D00142CB2 /* Debug */,
+				AE2F5AEF212BBA2D00142CB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2F5AF0212BBA2D00142CB2 /* Build configuration list for PBXNativeTarget "insta_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2F5AF1212BBA2D00142CB2 /* Debug */,
+				AE2F5AF2212BBA2D00142CB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE2F5AD6212BBA2C00142CB2 /* Project object */;
+}
