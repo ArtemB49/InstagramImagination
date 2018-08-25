@@ -17,30 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
         self.window = UIWindow()
+        let deviceFactory
+            = FactoryForFirtsControllerByDeviceFactory()
+                .makeFirstControllerFabric(by: UIDevice.current.userInterfaceIdiom)
         
-        let firstViewController: UIViewController
-        
-        if Credential.isUserAuthenticated {
-            let mainViewController = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController")
-            firstViewController = mainViewController
-        } else {
-            guard let authenticationController = UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "AuthViewController") as? AuthViewController else {
-                return false
-            }
-            authenticationController.delegate = self
-            firstViewController = authenticationController
-        }
-        
-        self.window?.rootViewController = firstViewController
+        self.window?.rootViewController = deviceFactory.viewController(isAuth: Credential.isUserAuthenticated)
         self.window?.makeKeyAndVisible()
         return true
-    }
-}
-
-extension AppDelegate: AuthViewControllerDelegate {
-    func authenticationViewController(_ viewController: UIViewController, authorizedWith token: String?) {
-        Credential.token = token
-        let mainViewController = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController")
-        viewController.present(mainViewController, animated: true, completion: nil)
     }
 }

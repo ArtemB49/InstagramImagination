@@ -12,7 +12,7 @@ import WebKit
 class AuthViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     
-    weak var delegate: AuthViewControllerDelegate?
+    var router: AuthRouter!
     
     let url: URL = {
         var components = URLComponents()
@@ -53,18 +53,9 @@ extension AuthViewController: WKNavigationDelegate {
         if let accessToken = urlString
             .components(separatedBy: "\(Constants.separetingItem)=")
             .last {
-            self.delegate?.authenticationViewController(
-                self,
-                authorizedWith: accessToken
-            )
+            router.navigateAuthSuccess()
             Credential.token = accessToken
             decisionHandler(.cancel)
-            replaceToProfileViewController()
         }
-    }
-    
-    func replaceToProfileViewController() {
-        let mainViewController = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController")
-        self.present(mainViewController, animated: true, completion: nil)
     }
 }

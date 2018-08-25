@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pgZ-1m-Ls1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HHv-Vj-i5g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,23 +19,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-5W-yB3">
-                                <rect key="frame" x="0.0" y="55" width="375" height="189"/>
+                                <rect key="frame" x="0.0" y="99" width="375" height="145"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0u-f3-oju">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw6-VT-idN">
-                                        <rect key="frame" x="0.0" y="138" width="375" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="54" width="375" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-qE-Yxo">
-                                        <rect key="frame" x="0.0" y="168.5" width="375" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="84.5" width="375" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KND-sH-4fD">
+                                        <rect key="frame" x="0.0" y="115" width="375" height="30"/>
+                                        <state key="normal" title="Мои публикации"/>
+                                        <connections>
+                                            <segue destination="elF-bF-yTS" kind="show" id="a1T-bI-Scg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -48,6 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1W8-aP-cT1"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6vc-d0-qaX"/>
                     <connections>
                         <outlet property="fullNameLabel" destination="fcu-qE-Yxo" id="l3R-uh-3FN"/>
                         <outlet property="profileImageView" destination="f0u-f3-oju" id="b1B-uQ-7Ze"/>
@@ -55,6 +63,32 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fkh-El-qih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-38.23088455772114"/>
+        </scene>
+        <!--Publications-->
+        <scene sceneID="HGK-OS-txq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Publications" id="elF-bF-yTS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00i-eD-dUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="-90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uFD-hD-dKJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HHv-Vj-i5g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aw2-7q-PDM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pgZ-1m-Ls1" kind="relationship" relationship="rootViewController" id="dnZ-Zm-Bq9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yd-rd-fbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="-38.23088455772114"/>
         </scene>

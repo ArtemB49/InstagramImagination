@@ -11,8 +11,8 @@ import Alamofire
 
 class ProfileViewController: UIViewController {
     
-    let authFactory: AuthRequestFactory
-        = RequestFactory().makeAuthRequestFactory()
+    let profileFactory: ProfileRequestFactory
+        = RequestFactory().makeProfileRequestFactory()
 
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
@@ -23,7 +23,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         if let accessToken = Credential.token {
-            authFactory.getUser(by: accessToken) { response in
+            profileFactory.getUser(by: accessToken) { response in
                 switch response.result {
                 case .success(let selfUser):
                     self.updateUI(data: selfUser)

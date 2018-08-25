@@ -33,7 +33,7 @@ extension RequestRouter {
         switch self.encoding {
         case .url:
             let url = try URLEncoding.default.encode(urlRequest, with: parameters)
-            print(url)
+            print("--- URL: \(url) ----")
             return url
         case .json:
             return try JSONEncoding.default.encode(urlRequest, with: parameters)

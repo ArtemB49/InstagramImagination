@@ -23,13 +23,27 @@
 		AE2F5B12212BE29200142CB2 /* ResponceCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B0B212BE29200142CB2 /* ResponceCodable.swift */; };
 		AE2F5B13212BE29200142CB2 /* StackViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B0C212BE29200142CB2 /* StackViewExtention.swift */; };
 		AE2F5B15212BE86C00142CB2 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B14212BE86C00142CB2 /* RequestFactory.swift */; };
-		AE2F5B18212BE8C100142CB2 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B17212BE8C100142CB2 /* AuthRequestFactory.swift */; };
+		AE2F5B18212BE8C100142CB2 /* ProfileRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B17212BE8C100142CB2 /* ProfileRequestFactory.swift */; };
 		AE2F5B1B212C00F000142CB2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F5B1A212C00F000142CB2 /* Profile.storyboard */; };
 		AE2F5B1D212C010900142CB2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B1C212C010900142CB2 /* ProfileViewController.swift */; };
-		AE2F5B1F212C049B00142CB2 /* AuthViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B1E212C049B00142CB2 /* AuthViewControllerDelegate.swift */; };
 		AE2F5B21212C0D3600142CB2 /* SelfUserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B20212C0D3600142CB2 /* SelfUserResult.swift */; };
-		AE2F5B23212C132E00142CB2 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B22212C132E00142CB2 /* Auth.swift */; };
+		AE2F5B23212C132E00142CB2 /* ProfileRequestFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B22212C132E00142CB2 /* ProfileRequestFactoryImpl.swift */; };
 		AE2F5B25212C13DF00142CB2 /* BaseRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5B24212C13DF00142CB2 /* BaseRequestFactory.swift */; };
+		AE842FB5213114FD00E33F1B /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FB4213114FD00E33F1B /* AuthRouter.swift */; };
+		AE842FB7213115D000E33F1B /* AuthDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FB6213115D000E33F1B /* AuthDefaultRouter.swift */; };
+		AE842FBA213121E900E33F1B /* AuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FB9213121E900E33F1B /* AuthBuilder.swift */; };
+		AE842FBC2131225E00E33F1B /* AuthDefaultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FBB2131225E00E33F1B /* AuthDefaultBuilder.swift */; };
+		AE842FBE21312ED400E33F1B /* FirtsControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FBD21312ED400E33F1B /* FirtsControllerFactory.swift */; };
+		AE842FC1213135F600E33F1B /* Publications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE842FC0213135F600E33F1B /* Publications.storyboard */; };
+		AE842FC32131363600E33F1B /* PublicationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FC22131363600E33F1B /* PublicationTableViewController.swift */; };
+		AE842FC52131400700E33F1B /* FirtsControllerFactoryIPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FC42131400700E33F1B /* FirtsControllerFactoryIPad.swift */; };
+		AE842FC72131403B00E33F1B /* FirtsControllerFactoryIPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FC62131403B00E33F1B /* FirtsControllerFactoryIPhone.swift */; };
+		AE842FC92131407000E33F1B /* FactoryForFirtsControllerByDeviceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FC82131407000E33F1B /* FactoryForFirtsControllerByDeviceFactory.swift */; };
+		AE842FCB2131536500E33F1B /* PublicationRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FCA2131536500E33F1B /* PublicationRequestFactory.swift */; };
+		AE842FCD213153C900E33F1B /* PublicationRequestFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FCC213153C900E33F1B /* PublicationRequestFactoryImpl.swift */; };
+		AE842FCF213154E600E33F1B /* SelfPublicationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FCE213154E600E33F1B /* SelfPublicationResult.swift */; };
+		AE842FD121315D1700E33F1B /* UserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FD021315D1700E33F1B /* UserCodable.swift */; };
+		AE842FD3213169B100E33F1B /* PublicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE842FD2213169B100E33F1B /* PublicationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,13 +67,27 @@
 		AE2F5B0B212BE29200142CB2 /* ResponceCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponceCodable.swift; sourceTree = "<group>"; };
 		AE2F5B0C212BE29200142CB2 /* StackViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewExtention.swift; sourceTree = "<group>"; };
 		AE2F5B14212BE86C00142CB2 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
-		AE2F5B17212BE8C100142CB2 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		AE2F5B17212BE8C100142CB2 /* ProfileRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequestFactory.swift; sourceTree = "<group>"; };
 		AE2F5B1A212C00F000142CB2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		AE2F5B1C212C010900142CB2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		AE2F5B1E212C049B00142CB2 /* AuthViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegate.swift; sourceTree = "<group>"; };
 		AE2F5B20212C0D3600142CB2 /* SelfUserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfUserResult.swift; sourceTree = "<group>"; };
-		AE2F5B22212C132E00142CB2 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		AE2F5B22212C132E00142CB2 /* ProfileRequestFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequestFactoryImpl.swift; sourceTree = "<group>"; };
 		AE2F5B24212C13DF00142CB2 /* BaseRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestFactory.swift; sourceTree = "<group>"; };
+		AE842FB4213114FD00E33F1B /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		AE842FB6213115D000E33F1B /* AuthDefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDefaultRouter.swift; sourceTree = "<group>"; };
+		AE842FB9213121E900E33F1B /* AuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBuilder.swift; sourceTree = "<group>"; };
+		AE842FBB2131225E00E33F1B /* AuthDefaultBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDefaultBuilder.swift; sourceTree = "<group>"; };
+		AE842FBD21312ED400E33F1B /* FirtsControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsControllerFactory.swift; sourceTree = "<group>"; };
+		AE842FC0213135F600E33F1B /* Publications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Publications.storyboard; sourceTree = "<group>"; };
+		AE842FC22131363600E33F1B /* PublicationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationTableViewController.swift; sourceTree = "<group>"; };
+		AE842FC42131400700E33F1B /* FirtsControllerFactoryIPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsControllerFactoryIPad.swift; sourceTree = "<group>"; };
+		AE842FC62131403B00E33F1B /* FirtsControllerFactoryIPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtsControllerFactoryIPhone.swift; sourceTree = "<group>"; };
+		AE842FC82131407000E33F1B /* FactoryForFirtsControllerByDeviceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryForFirtsControllerByDeviceFactory.swift; sourceTree = "<group>"; };
+		AE842FCA2131536500E33F1B /* PublicationRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationRequestFactory.swift; sourceTree = "<group>"; };
+		AE842FCC213153C900E33F1B /* PublicationRequestFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationRequestFactoryImpl.swift; sourceTree = "<group>"; };
+		AE842FCE213154E600E33F1B /* SelfPublicationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPublicationResult.swift; sourceTree = "<group>"; };
+		AE842FD021315D1700E33F1B /* UserCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCodable.swift; sourceTree = "<group>"; };
+		AE842FD2213169B100E33F1B /* PublicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +182,10 @@
 			children = (
 				AE2F5B14212BE86C00142CB2 /* RequestFactory.swift */,
 				AE2F5AFB212BDDA800142CB2 /* Credential.swift */,
+				AE842FBD21312ED400E33F1B /* FirtsControllerFactory.swift */,
+				AE842FC42131400700E33F1B /* FirtsControllerFactoryIPad.swift */,
+				AE842FC62131403B00E33F1B /* FirtsControllerFactoryIPhone.swift */,
+				AE842FC82131407000E33F1B /* FactoryForFirtsControllerByDeviceFactory.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -171,6 +203,8 @@
 			children = (
 				AE2F5B02212BE09900142CB2 /* LoginResult.swift */,
 				AE2F5B20212C0D3600142CB2 /* SelfUserResult.swift */,
+				AE842FCE213154E600E33F1B /* SelfPublicationResult.swift */,
+				AE842FD021315D1700E33F1B /* UserCodable.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -178,6 +212,7 @@
 		AE2F5AFA212BBB3F00142CB2 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				AE842FBF213133BB00E33F1B /* Publications */,
 				AE2F5B19212C00DE00142CB2 /* Profile */,
 				AE2F5B01212BDF0200142CB2 /* Auth */,
 			);
@@ -187,10 +222,11 @@
 		AE2F5B01212BDF0200142CB2 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				AE842FB8213121CE00E33F1B /* Builder */,
+				AE842FB3213114E100E33F1B /* Router */,
 				AE2F5AFD212BDE4400142CB2 /* AuthViewController.swift */,
 				AE2F5AFF212BDEFE00142CB2 /* AuthVCConstants.swift */,
 				AE2F5AE5212BBA2C00142CB2 /* Auth.storyboard */,
-				AE2F5B1E212C049B00142CB2 /* AuthViewControllerDelegate.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -220,8 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				AE2F5B24212C13DF00142CB2 /* BaseRequestFactory.swift */,
-				AE2F5B17212BE8C100142CB2 /* AuthRequestFactory.swift */,
-				AE2F5B22212C132E00142CB2 /* Auth.swift */,
+				AE2F5B17212BE8C100142CB2 /* ProfileRequestFactory.swift */,
+				AE2F5B22212C132E00142CB2 /* ProfileRequestFactoryImpl.swift */,
+				AE842FCA2131536500E33F1B /* PublicationRequestFactory.swift */,
+				AE842FCC213153C900E33F1B /* PublicationRequestFactoryImpl.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -233,6 +271,34 @@
 				AE2F5B1A212C00F000142CB2 /* Profile.storyboard */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		AE842FB3213114E100E33F1B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AE842FB4213114FD00E33F1B /* AuthRouter.swift */,
+				AE842FB6213115D000E33F1B /* AuthDefaultRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AE842FB8213121CE00E33F1B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				AE842FB9213121E900E33F1B /* AuthBuilder.swift */,
+				AE842FBB2131225E00E33F1B /* AuthDefaultBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		AE842FBF213133BB00E33F1B /* Publications */ = {
+			isa = PBXGroup;
+			children = (
+				AE842FC22131363600E33F1B /* PublicationTableViewController.swift */,
+				AE842FC0213135F600E33F1B /* Publications.storyboard */,
+				AE842FD2213169B100E33F1B /* PublicationTableViewCell.swift */,
+			);
+			path = Publications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +364,7 @@
 			files = (
 				AE2F5AEC212BBA2D00142CB2 /* LaunchScreen.storyboard in Resources */,
 				AE2F5AE9212BBA2D00142CB2 /* Assets.xcassets in Resources */,
+				AE842FC1213135F600E33F1B /* Publications.storyboard in Resources */,
 				AE2F5B1B212C00F000142CB2 /* Profile.storyboard in Resources */,
 				AE2F5AE7212BBA2C00142CB2 /* Auth.storyboard in Resources */,
 			);
@@ -365,23 +432,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2F5B0E212BE29200142CB2 /* AbstractRequestFactory.swift in Sources */,
+				AE842FCB2131536500E33F1B /* PublicationRequestFactory.swift in Sources */,
+				AE842FBE21312ED400E33F1B /* FirtsControllerFactory.swift in Sources */,
+				AE842FBA213121E900E33F1B /* AuthBuilder.swift in Sources */,
 				AE2F5AFE212BDE4400142CB2 /* AuthViewController.swift in Sources */,
+				AE842FC72131403B00E33F1B /* FirtsControllerFactoryIPhone.swift in Sources */,
+				AE842FBC2131225E00E33F1B /* AuthDefaultBuilder.swift in Sources */,
 				AE2F5B15212BE86C00142CB2 /* RequestFactory.swift in Sources */,
+				AE842FC92131407000E33F1B /* FactoryForFirtsControllerByDeviceFactory.swift in Sources */,
 				AE2F5B25212C13DF00142CB2 /* BaseRequestFactory.swift in Sources */,
-				AE2F5B1F212C049B00142CB2 /* AuthViewControllerDelegate.swift in Sources */,
 				AE2F5B00212BDEFE00142CB2 /* AuthVCConstants.swift in Sources */,
+				AE842FD121315D1700E33F1B /* UserCodable.swift in Sources */,
 				AE2F5B1D212C010900142CB2 /* ProfileViewController.swift in Sources */,
 				AE2F5B10212BE29200142CB2 /* ErrorParser.swift in Sources */,
+				AE842FD3213169B100E33F1B /* PublicationTableViewCell.swift in Sources */,
+				AE842FC52131400700E33F1B /* FirtsControllerFactoryIPad.swift in Sources */,
 				AE2F5B21212C0D3600142CB2 /* SelfUserResult.swift in Sources */,
 				AE2F5AFC212BDDA800142CB2 /* Credential.swift in Sources */,
 				AE2F5B11212BE29200142CB2 /* RequestRouter.swift in Sources */,
+				AE842FB5213114FD00E33F1B /* AuthRouter.swift in Sources */,
 				AE2F5B03212BE09900142CB2 /* LoginResult.swift in Sources */,
 				AE2F5AE2212BBA2C00142CB2 /* AppDelegate.swift in Sources */,
-				AE2F5B18212BE8C100142CB2 /* AuthRequestFactory.swift in Sources */,
+				AE842FCF213154E600E33F1B /* SelfPublicationResult.swift in Sources */,
+				AE842FB7213115D000E33F1B /* AuthDefaultRouter.swift in Sources */,
+				AE2F5B18212BE8C100142CB2 /* ProfileRequestFactory.swift in Sources */,
 				AE2F5B12212BE29200142CB2 /* ResponceCodable.swift in Sources */,
+				AE842FCD213153C900E33F1B /* PublicationRequestFactoryImpl.swift in Sources */,
 				AE2F5B13212BE29200142CB2 /* StackViewExtention.swift in Sources */,
-				AE2F5B23212C132E00142CB2 /* Auth.swift in Sources */,
+				AE2F5B23212C132E00142CB2 /* ProfileRequestFactoryImpl.swift in Sources */,
 				AE2F5B0F212BE29200142CB2 /* AbstractErrorParser.swift in Sources */,
+				AE842FC32131363600E33F1B /* PublicationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

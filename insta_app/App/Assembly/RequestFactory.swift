@@ -6,11 +6,11 @@ import Foundation
 import Alamofire
 
 class RequestFactory {
-    func makeErrorParser() -> AbstractErrorParser {
+    private func makeErrorParser() -> AbstractErrorParser {
         return ErrorParser()
     }
     
-    lazy var commonSessionManager: SessionManager = {
+    private lazy var commonSessionManager: SessionManager = {
         let configuration = URLSessionConfiguration.default
         configuration.httpShouldSetCookies = false
         configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
@@ -18,13 +18,21 @@ class RequestFactory {
         return manager
     }()
     
-    let sessionQueue = DispatchQueue.global(qos: .utility)
+    private let sessionQueue = DispatchQueue.global(qos: .utility)
     
-    func makeAuthRequestFactory<T>() -> T! {
+    func makeProfileRequestFactory() -> ProfileRequestFactory {
         let errorParser = makeErrorParser()
-        return Auth(
+        return ProfileRequestFactoryImpl(
             errorParser: errorParser,
             sessionManager: commonSessionManager,
-            queue: sessionQueue) as? T
+            queue: sessionQueue)
+    }
+    
+    func makePublicationRequestFactory() -> PublicationRequestFactory {
+        let errorParser = makeErrorParser()
+        return PublicationRequestFactoryImpl(
+            errorParser: errorParser,
+            sessionManager: commonSessionManager,
+            queue: sessionQueue)
     }
 }
